@@ -10,7 +10,7 @@ body{
     border:2px solid black;
     margin:20px;
     padding:20px;
-    background-color: lightgray !important;
+    background-color: rgb(10, 10, 10) !important;
 }
 .form-control{
     width:30%;
