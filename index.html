@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dom MANIPULATION FROM TASK</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+
+  <h1 id="title" style="text-align: center ;color: crimson;">Dom MANIPULATION FROM TASK</h1>
+  <p id="description" style="text-align: center;color: rgba(255, 8, 8, 0.765);font-size:x-large;"><b>The form and table are created using HTML,CSS,Manipulation are done
+      using DOM</b></p>
+  <form id="form" class="form-group">
+    <div class="mb-3 form-group" id="MP">
+      <label for="first-name">
+        <h4>First Name:</h4>
+      </label><br />
+      <input type="text" class="form-control"  id="first-name" name="first-name" placeholder="Enter the first name here" required />
+    </div>
+    <div class="mb-3 form-group">
+      <label for="last-name">
+        <h4>Last Name:</h4>
+      </label><br />
+      <input type="text" class="form-control" id="last-name" name="last-name" placeholder="Enter the last name here" required />
+    </div>
+    <div class="mb-3 form-group">
+      <label for="address">
+        <h4>Address:</h4>
+      </label><br />
+      <textarea id="address" class="form-control"  name="address" placeholder="Enter the address"rows="10"  cols="30" style="height: 100px;"></textarea>
+    </div>
+    <div class="mb-3 form-group">
+      <label for="pincode">
+        <h4>Pincode:</h4>
+      </label><br />
+      <input type="text" class="form-control" id="pincode" name="pincode" placeholder="Enter your pincode" required />
+    </div>
+    <div class="mb-3 form-check form-group">
+      <label for="gender">
+        <h4>Gender:</h4>
+      </label><br />
+      <div class="radio">
+        <label>
+          <input class="rad gender" class="form-control"  id="male" type="radio" name="gender" value="Male" />
+           <b>Male</b></label><br />
+        <label>
+          <input class="rad gender" class="form-control" id="female" type="radio" name="gender" value="Female" />
+        <b>Female</b> </label><br />
+        <label>
+          <input class="rad gender" class="form-control" id="others" type="radio" name="gender" value="Others" />
+          <b>Others</b> </label><br />
+      </div>
+      </div>
+        <div id="foodChoice" class="mb-3 form-check form-group">
+          <label for="food">
+          <h4>Choice of Food (choose at least 2):</h4>
+          </label><br />
+          <input class="food" type="checkbox" id="food1" name="food" value="Biriyani" />
+          <label for="food1"><b>Biriyani</b></label><br />
+          <input class="food" type="checkbox" id="food2" name="food" value="Dosa" />
+          <label for="food2"><b>Dosa</b></label><br />
+          <input class="food" type="checkbox" id="food3" name="food" value="Idly" />
+          <label for="food3"><b>Idly</b></label><br />
+          <input class="food" type="checkbox" id="food4" name="food" value="Chapathi" />
+          <label for="food4"><b>Chapathi</b></label><br />
+          <input class="food" type="checkbox" id="food5" name="food" value="Parotta" />
+          <label for="food5"><b>Parotta</b></label>
+        </div>
+      <div class="mb-3 form-group">
+        <label for="state">
+          <h4>State:</h4>
+        </label><br />
+        <input type="text" class="form-control"  id="state" placeholder="Enter your State" name="state" required />
+        </div>
+      <div class="mb-3 form-group">
+        <label for="country">
+          <h4>Country:</h4>
+        </label><br />
+        <input type="text"class="form-control"  id="country" placeholder="Enter your Country " name="country" required />
+      </div>
+      <div class="mb-3 form-group buttons">
+        <button type="button" class="btn btn-primary" onclick="add()" id="submit">Submit</button>
+      </div>
+  </form>
+  <div class="table1">
+    <div class="col-md-12"></div>
+    <table id="table" class="table">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Address</th>
+          <th>Pincode</th>
+          <th>Gender</th>
+          <th>Food</th>
+          <th>State</th>
+          <th>Country</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+
+</html>
